@@ -1,0 +1,97 @@
+.vote-result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.0rem;
+}
+
+.affiliation-name {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.vote-result-container .result-card {
+    width: min(100vw, 400px);
+    height: max(50vh, 500px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 16px;
+    border-radius: 16px;
+}
+
+.vote-result-container .result-card .result-title {
+    height: 10%;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 16px;
+    display: flex;
+    white-space: normal;
+    text-align: center;
+}
+
+.vote-result-container .result-card .result-affiliation {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.vote-result-container .result-card .result-option-list {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 16px;
+}
+
+.result-option-list .result-option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.result-option-list .result-option .option-name {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.result-option-list .result-option .option-turnout {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.vote-result-container .result-card .result-footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.result-footer .back-button {
+    width: 100px;
+    height: 40px;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    padding: 8px 4px;
+    color: #333;
+}

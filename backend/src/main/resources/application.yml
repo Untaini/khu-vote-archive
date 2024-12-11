@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: KhuVote
+
+  batch:
+    jdbc:
+      initialize-schema: never
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: {your-database-url}
+    username: {your-database-username}
+    password: {your-database-password}
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: false
+
+
+kaia:
+  #rpc-url: https://public-en.node.kaia.io #mainnet
+  rpc-url: https://public-en-kairos.node.kaia.io #testnet
+
+google:
+  id: {your-google-client-id}
+  secret: {your-google-client-secret}
+  token-api-uri: {your-front-google-callback-uri}
+  scope: email, openid, profile
+  certs-uri: https://www.googleapis.com/oauth2/v3/certs
+  issuer: https://accounts.google.com

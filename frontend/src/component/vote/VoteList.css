@@ -1,0 +1,182 @@
+.vote-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.list-title {
+    font-size: 2.5rem;
+    color: #333;
+    padding: 16px 16px;
+}
+
+.list-body {
+    width: min(100vw, 400px);
+    height: max(50vh, 500px);
+    overflow-x: auto;
+}
+
+.list-body::-webkit-scrollbar {
+    border-radius: 10px;
+}
+
+.list-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.list-body::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+.items-container {
+    height: max(95%, 475px);
+    white-space: nowrap;
+}
+
+.items-container .empty-list {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.0rem;
+}
+
+.card {
+    width: 80%;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 16px;
+    display: inline-block;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    margin: 8px 16px;
+}
+
+.card .card-container {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    margin: 8px 4px;
+    
+}
+
+.card-container .card-header {
+    width: 100%;
+    height: 20px;
+    color: #333;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container .card-header .voting-red-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/red-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container .card-header .voting-green-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/green-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container .card-header .voting-period {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.card-container .card-body {
+    width: 100%;
+    height: calc(95% - 92px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 16px;
+}
+
+.card-container .card-body .turnout-description {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-container .card-body .turnout-percent {
+    font-size: 4.0rem;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.card-container .card-body .vote-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 16px;
+    display: flex;
+    white-space: normal;
+    text-align: center;
+    text-wrap: balance;
+    word-break: keep-all;
+}
+
+.card-container .card-body .affiliation-name {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.card-container .card-footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container .card-footer .vote-button {
+    width: 100px;
+    height: 40px;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    padding: 8px 4px;
+    color: #333;
+}
+
+.card-container .card-footer .vote-result-button {
+    width: 100px;
+    height: 40px;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    padding: 8px 4px;
+    color: #333;
+}
+
+.card-container .card-footer .vote-button-disable {
+    width: 100px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px 4px;
+}
+

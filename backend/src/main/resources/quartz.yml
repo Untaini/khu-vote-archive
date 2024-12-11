@@ -1,0 +1,22 @@
+org:
+  quartz:
+    scheduler:
+      instanceName: QuartzScheduler
+      instanceId: AUTO
+    jobStore:
+      class: org.quartz.impl.jdbcjobstore.JobStoreTX
+      driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+      useProperties: true
+      dataSource: KHUVoteDB
+      tablePrefix: QRTZ_
+      isClustered: true
+      clusterCheckinInterval: '20000'
+    threadPool:
+      class: org.quartz.simpl.SimpleThreadPool
+      threadCount: '5'
+    dataSource:
+      KHUVoteDB:
+        driver: com.mysql.cj.jdbc.Driver
+        URL: {your-database-url}
+        user: {your-database-username}
+        password: {your-database-password}
